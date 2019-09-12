@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    width: 70%;
+    height: 800px;
+    background-color: orange;
+    margin: 0px auto;
+}
+
+.userList {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    height: 100%;
+    width: 40%;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: red;
+}
+
+.messageHeader {
+    text-align: center;
+}
+
+.userList h1 {
+    text-align: center;
+}
