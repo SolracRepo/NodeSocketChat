@@ -15,10 +15,11 @@ var io = socket(server)
 
 io.on('connection', function(socket) {
     console.log(`CONNECTION MADE WITH: ${socket.id}`)
-    console.log(socket)
     //all available methods for socket
+    console.log(socket)
 })
 
-app.get('/', (req, res)=> {
-    res.send('holla back yall')
+socket.on('chat', function(data) {
+    io.sockets.emit('chat', data)
 })
+
