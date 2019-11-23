@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, green, rgb(150, 150, 202));
+}
+
+.container {
+    width: 33%;
+    margin: 100px auto;
+    padding: 0 auto;
+    background-color: orange;
+    min-height: 700px;
+    border: 2px solid black;
+}
+
+#header {
+    text-align: center;
+    padding: 10px; 
+    border-bottom: 2px solid black;
+}
