@@ -22,6 +22,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     })
 
+    socket.on('messagesToAll', (data)=>{
+        
+    })
+
 
 
 
