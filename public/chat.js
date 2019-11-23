@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             userMessage
         });
 
+        // CLEAR MESSAGE BOX
         messageBox.value = "";
 
     })
