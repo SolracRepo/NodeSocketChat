@@ -46,6 +46,11 @@ body {
 
 #floorMe {
     background-color: gold;
-    position: relative;
-    top: 480px;
+    position: fixed;
+    bottom: 155px;
 }
+
+#messageBox {
+    display: block;
+}
+
