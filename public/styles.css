@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 33%;
+    max-width: 33%;
     margin: 100px auto;
     padding: 0 auto;
     background-color: orange;
@@ -19,4 +19,33 @@ body {
     text-align: center;
     padding: 10px; 
     border-bottom: 2px solid black;
+}
+
+.handle {
+    display: flex;
+}
+
+.message {
+    padding-left: 10px;
+}
+
+#sendBox {
+    position: absolute;
+    bottom: 100px;
+}
+
+#myForm input[type='text']{
+    min-width: 70%;
+    border-radius: 10px;
+    height: 30px;
+}
+#myForm input[type='submit']{
+    min-width: 28%;
+    border-radius: 5px;
+}
+
+#floorMe {
+    background-color: gold;
+    position: relative;
+    top: 480px;
 }

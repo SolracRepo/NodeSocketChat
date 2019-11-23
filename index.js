@@ -16,10 +16,13 @@ var io = socket(server)
 io.on('connection', function(socket) {
     console.log(`CONNECTION MADE WITH: ${socket.id}`)
     //all available methods for socket
-    console.log(socket)
+
+    socket.on('message', (data)=> {
+        console.log('message recived')
+        console.log(data);
+         io.sockets.emit('messagesToAll', data)
+    })
 })
 
-socket.on('chat', function(data) {
-    io.sockets.emit('chat', data)
-})
+
 
