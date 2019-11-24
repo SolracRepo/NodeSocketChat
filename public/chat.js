@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     })
 
     socket.on('messagesToAll', (data)=>{
-        messageAppend.innerHTML += '<p>' + data.userHandle + ':<span>' + data.userMessage + '</span></p>'
+        messageAppend.innerHTML += '<p class="myHandle">' + data.userHandle + ':<span class="myMessage">' + data.userMessage + '</span></p>'
         // messageAppend.append(`${data.userHandle}: ${data.userMessage}`)
     })
 

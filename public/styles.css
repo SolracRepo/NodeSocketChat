@@ -10,15 +10,18 @@ body {
     max-width: 33%;
     margin: 100px auto;
     padding: 0 auto;
-    background-color: orange;
-    min-height: 700px;
-    border: 2px solid black;
+    min-height: 725px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px;
+    background-color: green;
 }
 
 #header {
     text-align: center;
     padding: 10px; 
     border-bottom: 2px solid black;
+    font-family: monospace;
+    color: white;
 }
 
 .handle {
@@ -27,6 +30,10 @@ body {
 
 .message {
     padding-left: 10px;
+    max-height: 550px;
+    min-height: 550px;
+    background-color: green;
+    overflow: scroll;
 }
 
 #sendBox {
@@ -35,22 +42,45 @@ body {
 }
 
 #myForm input[type='text']{
-    min-width: 70%;
-    border-radius: 10px;
+    min-width: 60%;
     height: 30px;
+    float: left;    
 }
 #myForm input[type='submit']{
-    min-width: 28%;
+    font-size: 22px;
+    font-family: monospace;
+    min-width: 40%;
     border-radius: 5px;
+    height: 65px;
+    background-color: red;
 }
-
+input[type="text"]:hover{
+    background-color: rgba(255, 19, 19, 0.1);
+}
+input[type="submit"]:hover {
+    border: 2px solid black;
+}
+ 
 #floorMe {
-    background-color: gold;
-    position: fixed;
-    bottom: 155px;
-}
+    background-color: silver;
+    min-height: 75px;
+    text-align: center;
+} 
+
 
 #messageBox {
     display: block;
 }
 
+.myHandle {
+    font-size: 22px;
+    color: white;
+    font-family: monospace;
+
+}
+.myMessage{ 
+    padding-left: 15px;
+    font-size: 18px;
+    color: rgb(30, 255, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
